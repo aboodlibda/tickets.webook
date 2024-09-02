@@ -8,6 +8,16 @@
     <meta name="google" content="notranslate" />
     <link rel="icon" href="https://webook.com/favicon.ico" />
     <link rel="manifest" href="https://webook.com/manifest.json" />
+
+    <meta name="description" content="احجز أفضل الفعاليات والتجارب والمسرحيات في السعودية">
+    <meta name="keywords" content="tickets">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WEBOOK | Tickets Platform | Webook">
+    <meta property="og:site_name" content="WEBOOK TICKETS PLATFORM">
+    <meta property="og:description" content="احجز أفضل الفعاليات والتجارب والمسرحيات في السعودية">
+    <meta name="description" content="احجز أفضل الفعاليات والتجارب والمسرحيات في السعودية">
+    <meta property="og:image" content="{{asset('images/app/logo-new.svg')}}" />
+
     <!-- <link
       rel="preload"
       href="/fonts/inter/variable.ttf"
