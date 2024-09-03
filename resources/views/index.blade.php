@@ -467,67 +467,6 @@
 
     </section>
 
-    <section class="container relative py-12">
-        <div class="flex items-center justify-between space-y-4 md:flex-row md:space-y-0">
-            <div>
-                <h2>احجز مبكرًا: بطولة كأس العالم للرياضات الإلكترونية تنتظرك!</h2>
-            </div>
-        </div>
-        <div class="med-related-prod-wrap" id="med-related-prod-wrapper">
-            <div class="med-rel-prod-slider-wrapper">
-                <div class="med-rel-prod-slider carousel-content">
-                    @php
-                        $events = \App\Models\Event::query()->whereHas('category', function ($query) {
-                            $query->where('name', 'LIKE', 'كأس العالم للرياضات الإلكترونية');
-                        })
-                        ->where('status', 'active')
-                        ->latest()
-                        ->paginate(10);
-
-                    @endphp
-                    @foreach($events as $event)
-                        <div
-                            class="xs:mr-3 xs:basis-1/2 relative mr-2 shrink-0 basis-[85%] md:basis-[28%] lg:basis-[22%] xl:basis-[18%]">
-                            <a class="ring-transparent text-text ring-offset-2 inline-flex items-center justify-center overflow-hidden text-center transition disabled:bg-input/10 disabled:text-text/40 focus:outline-none disabled:cursor-not-allowed rounded-md group relative h-full w-full gap-0 bg-transparent p-px ring-offset-white focus:ring-1"
-                               to=""
-                               href="{{ route('main-event',$event->id) }}">
-                                <div class="flex h-full w-full flex-col items-start overflow-hidden rounded-md">
-                                    <div class="relative w-full overflow-hidden rounded-md "><img
-                                            src="{{asset('events-images/'.$event->image)}}?fm=webp&amp;fit=thumb&amp;w=600&amp;h=600"
-                                            class="aspect-1 h-full object-cover transition duration-300 group-hover:scale-[1.02] group-focus:scale-[1.02]"
-                                            width="600" height="600" alt="كاظم الساهر" data-loaded="true" srcset="">
-                                    </div>
-                                    <div class="text-text space-y-0.5 pt-2 text-start">
-                                        <div class="text-sm leading-none text-gray-400"><span>فعالية</span><span> ·
-{{--                                                    12 يوليو</span>--}}
-                                                {{\Carbon\Carbon::create($event->date)->locale("ar_SA")->translatedFormat("j F")}}</span>
-
-                                        </div>
-                                        <p class="line-clamp-2">{{$event->title}}</p>
-                                        <div>
-                                            <div class="flex items-center gap-1">
-                                                <p class="text-sm text-gray-400">يبدأ من</p>
-                                                <p class="font-semibold">{{$event->tickets->min('price')}} ر.س</p>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-center gap-1 rounded-md text-xs py-1">
-                                            <div style="color: rgb(186, 229, 0);"><svg width="24" height="24"
-                                                                                       viewBox="0 0 24 24" fill="none" class="h-4 w-4"
-                                                                                       xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                          d="M11 19.5229C11 20.265 11.9624 20.5564 12.374 19.9389L18.2227 11.166C18.5549 10.6676 18.1976 10 17.5986 10H13V4.47708C13 3.73503 12.0376 3.44363 11.626 4.06106L5.77735 12.834C5.44507 13.3324 5.80237 14 6.40139 14H11V19.5229Z"
-                                                          fill="currentColor"></path>
-                                                </svg></div>
-                                            <p class="leading-none text-gray-400">حجز فوري</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a></div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="container space-y-8 py-12">
         <h2>شركاء ويبوك</h2>
         <div class="space-y-6 text-center">

@@ -415,7 +415,7 @@
 
                     </ul>
                 </div>
-                <div class="flex w-full flex-col items-center justify-center gap-2 lg:flex-row xl:justify-end">
+                {{-- <div class="flex w-full flex-col items-center justify-center gap-2 lg:flex-row xl:justify-end">
                     <p class="text-center text-sm">حمل تطبيق webook.com الآن</p>
                     <div class="flex items-center"><a
                             class="hover:bg-text/5 active:bg-text/10 ring-text text-white focus:ring-1 ring-offset-body relative inline-flex items-center justify-center gap-1 overflow-hidden px-4 py-2 text-center transition disabled:bg-input/10 disabled:text-text/40 focus:outline-none disabled:cursor-not-allowed rounded-md"
@@ -434,7 +434,7 @@
                             href="" target="_blank"> <img
                                 src="https://images.ctfassets.net/vy53kjqs34an/3KYMflvrov5gfZ1v7wK9Ue/50b584fe2c8aed284475c1a87de655f0/huawei_app.svg?fit=pad&amp;w=107&amp;h=33"
                                 width="107" height="33" alt=""></a></div>
-                </div>
+                </div> --}}
             </div>
             <div class="flex flex-col items-center justify-between border-t border-gray-500/50 pt-5 xl:flex-row">
                 <nav class="flex flex-wrap justify-center py-2 pb-8 text-xs md:p-4">
