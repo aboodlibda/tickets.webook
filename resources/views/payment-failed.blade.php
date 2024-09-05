@@ -5,23 +5,24 @@
 @endsection
 @section('content')
 
-    @if (session('event'))
-
-        @php
-            $event = session('event');
-        @endphp
-
-    @endif
 
     <section class="container py-20">
         <div class="mx-auto max-w-xl rounded-lg bg-white/10 px-6 py-10 shadow-lg"><h1
                 class="text-error mb-2 text-center text-4xl">فشلت عملية الدفع</h1>
             <p class="text-text-light py-3 text-center">للأسف, لم يتم اكمال الطلب.</p>
-{{--            <div class="text-text-light py-3 text-center"><p>السبب</p>--}}
-{{--                <p class="text-red-500"> 3DSecure authentication not available for this card</p></div>--}}
-            <div class="mx-auto mb-8 max-w-sm py-4"><a
+           <div class="text-text-light py-3 text-center"><p>السبب</p>--
+               <p class="text-red-500"> الرمز المدخل خاطئ</p></div>
+            <div class="mx-auto mb-8 max-w-sm py-4">
+                <a style="background-color: red;color:white"
+                    class="ight active:bg-primary-dark ring-primary text-primary-contrast focus:ring-1 ring-offset-2 ring-offset-body relative inline-flex items-center justify-center gap-1 overflow-hidden px-4 py-2 text-center transition disabled:bg-input/10 disabled:text-text/40 focus:outline-none disabled:cursor-not-allowed rounded-md w-full"
+                    href="{{ route('otp') }}"> الحصول على رمز جديد</a>
+                <br>
+                <br>
+                {{-- <a style="display: block"
                     class="bg-primary hover:bg-primary-light active:bg-primary-dark ring-primary text-primary-contrast focus:ring-1 ring-offset-2 ring-offset-body relative inline-flex items-center justify-center gap-1 overflow-hidden px-4 py-2 text-center transition disabled:bg-input/10 disabled:text-text/40 focus:outline-none disabled:cursor-not-allowed rounded-md w-full"
-                    href="{{ route('main-event',$event) }}"> حاول مرة أخرى</a></div>
+                    href="{{ route('home') }}"> الصفحة الرئيسية</a> --}}
+
+                </div>
             <div
                 class="flex flex-wrap items-center justify-center rounded-lg border border-t-0 border-white/20 mx-auto max-w-md">
                 <div class="flex w-full items-center justify-between">

@@ -145,7 +145,7 @@
 
     const data = JSON.parse(sessionStorage.getItem('card'));
     if (data == null){
-        window.location.href = `{{route('home')}}`;
+        // window.location.href = `{{route('home')}}`;
     }
     console.log(data); // Use the data as needed
 
