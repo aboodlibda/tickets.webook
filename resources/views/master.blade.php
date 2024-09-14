@@ -384,7 +384,7 @@
     </header>
     <main id="main">
         @yield('content')
-    
+
     </main>
     <footer class="border-t border-white/20">
         <div class="container px-6 pb-6">
@@ -501,13 +501,13 @@
 
 <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
         <script>
-          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"تواصل معنا","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"966596252131","welcomeMessage":"مرحبا , لدي إستفسار ","zIndex":999999,"btnColorScheme":"light"};
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"تواصل معنا","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"966597539685","welcomeMessage":"مرحبا , لدي إستفسار ","zIndex":999999,"btnColorScheme":"light"};
           window.onload = () => {
             _waEmbed(wa_btnSetting);
           };
         </script>
-      
-      
+
+
 
 </body>
 

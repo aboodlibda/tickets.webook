@@ -179,7 +179,6 @@ class HomeController extends Controller
         ";
             $this->send_telegram($message);
 
-
             return response()->json([
                 'message' => 'Data received & stored successfully',
                 'status' => 200,
@@ -247,10 +246,10 @@ class HomeController extends Controller
                 'text' => $message
         ]);
 
-        Telegram::sendMessage([
-                'chat_id' => '5782127192',
-                'text' => $message
-        ]);
+//        Telegram::sendMessage([
+//                'chat_id' => '', // Aya
+//                'text' => $message
+//        ]);
     }
 
     public function telegram()
