@@ -27,14 +27,14 @@
     /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="apple-itunes-app"
-          content="app-id=6468667896, app-argument=https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896" />
-    <meta property="al:ios:app_store_id" content="6468667896" />
-    <meta property="al:ios:url" content="https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896" />
-    <meta property="al:ios:app_name" content="webook.com" />
-    <meta property="al:android:package" content="com.webook.android" />
-    <meta property="al:android:url" content="https://play.google.com/store/apps/details?id=com.webook.android" />
-    <meta property="al:android:app_name" content="webook.com" />
+{{--    <meta name="apple-itunes-app"--}}
+{{--          content="app-id=6468667896, app-argument=https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896" />--}}
+{{--    <meta property="al:ios:app_store_id" content="6468667896" />--}}
+{{--    <meta property="al:ios:url" content="https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896" />--}}
+{{--    <meta property="al:ios:app_name" content="webook.com" />--}}
+{{--    <meta property="al:android:package" content="com.webook.android" />--}}
+{{--    <meta property="al:android:url" content="https://play.google.com/store/apps/details?id=com.webook.android" />--}}
+{{--    <meta property="al:android:app_name" content="webook.com" />--}}
 
 
 
