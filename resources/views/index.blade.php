@@ -164,15 +164,16 @@
                 <div class="med-rel-prod-slider carousel-content">
 
                     <div class="embla__slide flex h-full w-full shrink-0 py-4 md:mx-auto md:w-[85%] md:max-w-screen-xl"
-                         style="transform: translate3d(0px, 0px, 0px);"><a
+                         style="transform: translate3d(0px, 0px, 0px);">
+                        <a
                             class="text-text focus:ring-1 ring-offset-body inline-flex items-center gap-1 overflow-hidden py-2 text-center transition disabled:bg-input/10 disabled:text-text/40 focus:outline-none disabled:cursor-not-allowed rounded-md bg-body-light relative h-full flex-col justify-between !py-0 px-0 ring-white/50 sm:basis-[98%] md:rounded-lg md:scale-[0.95] lg:scale-[0.96] 2xl:scale-[0.90]"
                             to=""
                             href="">
                             <div class="aspect-1 h-full w-full md:aspect-[3/1]"><img
-                                    src="{{asset('/assets/tamer.jpg')}}"
+                                    src="{{asset('/assets/1500X900-Majid-Almuhandis-Oct-24.jpg')}}"
                                     class="hidden h-full w-full overflow-hidden object-contain object-center md:block"
                                     width="100%" height="100%" alt="" data-loaded="true" srcset=""><img
-                                    src="{{asset('/assets/tamer.jpg')}}"
+                                    src="{{asset('/assets/1500X900-Majid-Almuhandis-Oct-24.jpg')}}"
                                     class="h-full w-full overflow-hidden object-contain object-center md:hidden"
                                     width="600" height="600" alt="" data-loaded="true" srcset=""></div>
                             <div class="hidden w-full items-center justify-between p-4 pt-2 md:flex">
@@ -193,7 +194,8 @@
                                     <p class="text-xs text-gray-400"></p>
                                 </div>
                             </div>
-                        </a></div>
+                        </a>
+                    </div>
 
 
                 </div>
